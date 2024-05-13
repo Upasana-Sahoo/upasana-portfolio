@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upasana's Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Lightbox CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <style>
+    /* Custom Styles */
+    body {
+      font-family: 'Roboto', sans-serif; /* Specify Roboto as the font for body text */
+      background-color: #ACE1AF; /* Use the first color from the palette as the background color */
+      animation: pulsateBG 5s ease infinite alternate; /* Add background pulsating animation */
+    }
+    /* Navbar */
+    .navbar {
+      background-color: #205b3d !important; /* Dark green */
+    }
+    /* Navbar Links */
+    .navbar-nav .nav-link {
+      color: #B0EBB4; /* Use the second color from the palette for navbar links */
+    }
+    /* Active Navbar Link */
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+      color: #F6C3E0; /* Use the fourth color from the palette for active/hover navbar links */
+    }
+    /* Section Headings */
+    h2 {
+      font-family: 'Lora', serif; /* Specify Lora as the font for headings */
+      color: #B0EBB4; /* Use the second color from the palette for section headings */
+      text-align: center; /* Align headings to the center */
+    }
+    /* White Headings */
+    #introduction h2,
+    #philosophy h2,
+    #hobbies-skills h2,
+    footer {
+      color: #FFF !important; /* White color for specified headings and footer */
+    }
+    /* Section Backgrounds */
+    .bg-light {
+      background-color: #fff !important; /* White background */
+    }
+    /* Footer */
+    footer {
+      background-color: #205b3d; /* Dark green */
+      padding: 20px 0;
+      text-align: center;
+    }
+    /* Introduction Image */
+    #introduction img {
+      max-width: 40%; /* Make the image 40% of the container width */
+      float: left; /* Align the image to the left */
+      margin-right: 20px; /* Add margin to the right of the image */
+      border-radius: 20px; /* Add rounded corners to the image */
+      border: 5px solid #fff; /* Add a white border */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+    }
+
+    /* Scrolling Animations */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 1s ease-out;
+    }
+
+    /* Background Pulsating Animation */
+    @keyframes pulsateBG {
+      0% {
+        background-color: #ACE1AF;
+      }
+      50% {
+        background-color: #8BD58B;
+      }
+      100% {
+        background-color: #ACE1AF;
+      }
+    }
+
+    /* Gallery Collage */
+    .gallery-collage {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 10px;
+    }
+
+    .gallery-collage .col-md-4 {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .gallery-collage .col-md-4 img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-collage .col-md-4:hover img {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Upasana's Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
+          <li class="nav-item"><a class="nav-link" href="#qualifications">Qualifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#philosophy">Philosophy of Teaching</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reflection">Reflection</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hobbies-skills">Hobbies and Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="introduction" class="py-5 fade-in-up">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="Screenshot_20240511_102000_Gallery.jpg" alt="Introduction Image" class="img-fluid mb-3">
+        </div>
+        <div class="col-md-6">
+          <h2>Introduction</h2>
+          <p class="text-center">Placeholder text for introduction...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="qualifications" class="py-5 bg-light fade-in-up">
+    <div class="container">
+      <h2>Qualifications</h2>
+      <table class="table mx-auto">
+        <thead>
+          <tr>
+            <th>University</th>
+            <th>Degree</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sambalpur University</td>
+            <td>Bachelor in Arts</td>
+          </tr>
+          <tr>
+            <td>Sikkim Manipal University</td>
+            <td>MBA</td>
+          </tr>
+          <tr>
+            <td>All India Early Childhood Care & Education</td>
+            <td>Diploma in Early Years Teacher's Training</td>
+          </tr>
+          <tr>
+            <td>Abu Dhabi University</td>
+            <td>Post-Graduate Diploma in Education (Pursuing) </td>
+          </tr>
+          <tr>
+            <td>Asian College of Teachers</td>
+            <td>Master of Arts in Education with Special Education (Pursuing)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="philosophy" class="py-5 fade-in-up">
+    <div class="container">
+      <h2>Philosophy of Teaching</h2>
+      <p class="text-center">In my philosophy of teaching, I believe in fostering the all-round development of each student. 
+        Recognizing and catering to their individual needs is the most important element for me. I believe education is not 
+        just about imparting knowledge, it is also about nurturing critical thinking, creativity, emotional intelligence, and 
+        social skills. I strongly believe every student is unique, with their own strengths, weaknesses, and learning styles. 
+        As an educator, it's my responsibility to create a supportive and inclusive environment where each student feels valued 
+        and empowered to reach their full potential. I strive to engage students through interactive and student-centered 
+        approaches, encouraging them to ask questions, explore new ideas, and think critically about the world around them. 
+        By recognizing and respecting the diversity of learners, I aim to cultivate a love for learning that extends beyond 
+        the classroom and prepares students for success in an ever-changing world.</p>
+    </div>
+  </section>
+
+  <section id="reflection" class="py-5 bg-light fade-in-up">
+    <div class="container">
+      <h2>Reflection</h2>
+      <p class="text-center">Placeholder text for reflections...</p>
+    </div>
+  </section>
+
+  <section id="hobbies-skills" class="py-5 fade-in-up">
+    <div class="container">
+      <h2>Hobbies and Skills</h2>
+      <p class="text-center">Placeholder text for hobbies and skills...</p>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Gallery</h2>
+      <div class="row gallery-collage">
+        <div class="col-md-4">
+          <a href="WhatsApp Image 2024-05-13 at 15.35.01 (1).jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2024-05-13 at 15.35.01 (1).jpeg" class="img-fluid" alt="Image 1"></a>
+        </div>
+        <div class="col-md-4">
+          <a href="WhatsApp Image 2024-05-13 at 15.35.01.jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2024-05-13 at 15.35.01.jpeg" class="img-fluid" alt="Image 2"></a>
+        </div>
+        <div class="col-md-4">
+          <a href="WhatsApp Image 2024-05-13 at 15.35.02 (1).jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2024-05-13 at 15.35.02 (1).jpeg" class="img-fluid" alt="Image 3"></a>
+        </div>
+        <!-- Add more images here -->
+        <div class="col-md-4">
+          <a href="WhatsApp Image 2024-05-13 at 15.35.02 (2).jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2024-05-13 at 15.35.02 (2).jpeg" class="img-fluid" alt="Image 3"></a>
+        </div>
+        <div class="col-md-4">
+          <a href="WhatsApp Image 2024-05-13 at 15.35.02.jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2024-05-13 at 15.35.02.jpeg" class="img-fluid" alt="Image 3"></a>
+        </div>
+        <div class="col-md-4">
+          <a href="WhatsApp Image 2024-05-13 at 15.35.03 (1).jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2024-05-13 at 15.35.03 (1).jpeg" class="img-fluid" alt="Image 3"></a>
+        </div>
+        <div class="col-md-4">
+          <a href="WhatsApp Image 2024-05-13 at 15.35.03.jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2024-05-13 at 15.35.03.jpeg" class="img-fluid" alt="Image 3"></a>
+        </div>
+        <div class="col-md-4">
+          <a href="WhatsApp Image 2024-05-13 at 15.35.04 (1).jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2024-05-13 at 15.35.04 (1).jpeg" class="img-fluid" alt="Image 3"></a>
+        </div>
+        <div class="col-md-4">
+          <a href="WhatsApp Image 2024-05-13 at 15.35.04.jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2024-05-13 at 15.35.04.jpeg" class="img-fluid" alt="Image 3"></a>
+        </div>
+        <div class="col-md-4">
+          <a href="WhatsApp Image 2024-05-13 at 15.35.05.jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2024-05-13 at 15.35.05.jpeg" class="img-fluid" alt="Image 3"></a>
+        </div>
+        <div class="col-md-4">
+          <a href="WhatsApp Image 2024-05-13 at 15.35.06 (1).jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2024-05-13 at 15.35.06 (1).jpeg" class="img-fluid" alt="Image 3"></a>
+        </div>
+        <div class="col-md-4">
+          <a href="WhatsApp Image 2024-05-13 at 15.35.06 (2).jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2024-05-13 at 15.35.06 (2).jpeg" class="img-fluid" alt="Image 3"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>University ID: 1091867</p>
+    <p>Contact: 0567826507</p>
+    <p><a href="mailto:your_email@gmail.com">upasana03@gmail.com</a></p>
+  </footer>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Lightbox JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>

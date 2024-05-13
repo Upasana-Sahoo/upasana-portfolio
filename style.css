@@ -1,0 +1,44 @@
+/* Styles for the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Styles for the slideshow */
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Styles for the image in each section */
+  .container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Styles for sections */
+  section {
+    padding: 50px 0;
+  }
+  
+  /* Styles for section headings */
+  h2 {
+    text-align: center;
+  }
+  
+  /* Styles for section content */
+  .container {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  /* Styles for paragraphs */
+  p {
+    text-align: justify;
+  }
+  
